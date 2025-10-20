@@ -79,12 +79,13 @@ const Myexpenses = () => {
 
                 <div className='flex gap-5 mt-5'>
 
-                    <div className='border p-5 w-[80vh] h-[50vh] overflow-y-auto bg-purple-50'>
-                        <h3 className='text-center font-semibold mb-5'>HISTORY</h3>
+                    <div className='border p-5 w-[80vh] h-[42vh] overflow-y-auto bg-purple-50'>
+                        <h3 className='text-center font-semibold mb-5 tracking-wider'>HISTORY</h3>
 
                         {
                             saveTransactions.length === 0 ? (
-                                <p className='text-gray-300 text-center'>NO Transaction History</p>
+                            
+                                <p className='text-gray-300 text-center mt-20'>No Transactions History</p>
                             ) :
 
                                 <ul className="space-y-6">
@@ -111,7 +112,7 @@ const Myexpenses = () => {
 
                     </div>
 
-                    <div className='p-3 border w-[50vh] text-center h-[50vh] grid'>
+                    <div className='p-3 border w-[50vh] text-center h-[42vh] grid'>
                         <div className='grid '>
                               
                         <div className='font-bold text-xl mt-3'>Your Balance

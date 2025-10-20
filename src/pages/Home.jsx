@@ -1,30 +1,34 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Home = () => {
   return (
-    <>
+    <div className="bg-purple-50 min-h-[90vh]  flex flex-col items-center justify-center p-3 text-center">
+      <div className="w-[100px] h-[100px] sm:w-[300px] sm:h-[300px] mb-4">
+        <DotLottieReact
+          src="https://lottie.host/1d4c56e9-d242-445d-90dd-726344b85405/IKsUgaRBdm.lottie"
+          loop
+          autoplay
+        />
+      </div>
+      
+
     
-    <div className='bg-purple-100 min-h-[92vh] max-w-2xl mx-auto p-5'>
+      <h1 className="text-4xl sm:text-6xl font-bold text-purple-700 mb-3">
+        Track Your Expenses
+      </h1>
+      <h2 className="text-2xl sm:text-3xl text-gray-700 font-semibold mb-6">
+        Right on <span className="text-purple-600">Expense Tracker</span>
+      </h2>
 
-<div className='grid items-center justify-center'>
-
-            <div className='grid mt-40 items-center justify-center gap-2'  >
-
-            <h2 className='text-4xl font-bold'>Track Your Expenses</h2>
-            <h2 className='text-2xl ml-4 font-semibold'>Right on EXPENSE TRACKER</h2>
-            </div>
-
-                <div className='mt-4 ml-19'>
-                    <NavLink to={"/myexpenses"}>
-                    <button className='uppercase bg-purple-700 text-white px-2 py-2 rounded font-bold cursor-pointer'>Manage Expenses</button>
-                    </NavLink>
-                </div>
-</div>
-
+  
+      <NavLink to="/myexpenses">
+        <button className="bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-lg font-bold uppercase shadow-md transition duration-300 word-spacing-[5px] ">
+          Track Expenses
+        </button>
+      </NavLink>
     </div>
-    
-    </>
   )
 }
 
