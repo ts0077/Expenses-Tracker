@@ -4,15 +4,15 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Home = () => {
   return (
-    <div className="bg-purple-50 min-h-[90vh]  flex flex-col items-center justify-center p-3 text-center">
-      <div className="w-[100px] h-[100px] sm:w-[300px] sm:h-[300px] mb-4">
+    <div className="bg-purple-50 min-h-[89vh]  flex flex-col items-center justify-center p-3 text-center">
+     
+       <div className="w-[100px] h-[100px] sm:w-[280px] sm:h-[270px] mb-4">
         <DotLottieReact
           src="https://lottie.host/1d4c56e9-d242-445d-90dd-726344b85405/IKsUgaRBdm.lottie"
           loop
           autoplay
         />
       </div>
-      
 
     
       <h1 className="text-4xl sm:text-6xl font-bold text-purple-700 mb-3">
